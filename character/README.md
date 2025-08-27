@@ -28,3 +28,34 @@ query {
     gender
   }
 }
+
+
+
+# Characters List – Rick and Morty GraphQL API
+
+This task demonstrates how to fetch a paginated list of characters using the `characters(page: Int)` field.
+
+## Queries
+- `characters-page-1.graphql` → List of characters, page 1
+- `characters-page-2.graphql` → List of characters, page 2
+- `characters-page-3.graphql` → List of characters, page 3
+- `characters-page-4.graphql` → List of characters, page 4
+
+## Fields Retrieved
+- `id`
+- `name`
+- `status`
+- `image`
+
+## Example Query
+```graphql
+query {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
