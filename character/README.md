@@ -28,7 +28,7 @@ query {
     gender
   }
 }
-
+```
 
 
 # Characters List – Rick and Morty GraphQL API
